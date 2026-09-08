@@ -12,7 +12,7 @@
   "description",
   "column_break_raid1",
   "impact",
-  "owner",
+  "raid_owner",
   "status",
   "section_break_raid2",
   "raised_date",
