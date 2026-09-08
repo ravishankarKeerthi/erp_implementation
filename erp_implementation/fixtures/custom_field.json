@@ -183,22 +183,22 @@
  {
   "doctype": "Custom Field",
   "dt": "Project",
-  "fieldname": "costing_tab",
+  "fieldname": "erpimpl_costing_tab",
   "label": "Costing",
   "fieldtype": "Tab Break",
   "insert_after": "raid_html",
   "module": "Erp Implementation",
-  "name": "Project-costing_tab"
+  "name": "Project-erpimpl_costing_tab"
  },
  {
   "doctype": "Custom Field",
   "dt": "Project",
-  "fieldname": "costing_html",
+  "fieldname": "erpimpl_costing_html",
   "label": "Costing",
   "fieldtype": "HTML",
-  "insert_after": "costing_tab",
+  "insert_after": "erpimpl_costing_tab",
   "module": "Erp Implementation",
-  "name": "Project-costing_html"
+  "name": "Project-erpimpl_costing_html"
  },
  {
   "doctype": "Custom Field",
@@ -206,7 +206,7 @@
   "fieldname": "tasks_tab",
   "label": "Tasks",
   "fieldtype": "Tab Break",
-  "insert_after": "costing_html",
+  "insert_after": "erpimpl_costing_html",
   "module": "Erp Implementation",
   "name": "Project-tasks_tab"
  },
