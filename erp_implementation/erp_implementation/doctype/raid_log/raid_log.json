@@ -56,7 +56,7 @@
    "in_list_view": 1
   },
   {
-   "fieldname": "owner",
+   "fieldname": "raid_owner",
    "label": "Owner",
    "fieldtype": "Link",
    "options": "User"
