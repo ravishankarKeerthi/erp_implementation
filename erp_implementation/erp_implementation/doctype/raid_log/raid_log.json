@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-09-05 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "type",
+  "description",
+  "column_break_raid1",
+  "impact",
+  "owner",
+  "status",
+  "section_break_raid2",
+  "raised_date",
+  "target_date",
+  "resolution"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "label": "Project",
+   "fieldtype": "Link",
+   "options": "Project",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "type",
+   "label": "Type",
+   "fieldtype": "Select",
+   "options": "Risk\nAssumption\nIssue\nDependency",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "description",
+   "label": "Description",
+   "fieldtype": "Small Text",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_raid1",
+   "label": "",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "impact",
+   "label": "Impact",
+   "fieldtype": "Select",
+   "options": "High\nMedium\nLow",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "owner",
+   "label": "Owner",
+   "fieldtype": "Link",
+   "options": "User"
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "Open\nMitigated\nClosed",
+   "default": "Open",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "section_break_raid2",
+   "label": "",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "raised_date",
+   "label": "Raised Date",
+   "fieldtype": "Date"
+  },
+  {
+   "fieldname": "target_date",
+   "label": "Target Date",
+   "fieldtype": "Date"
+  },
+  {
+   "fieldname": "resolution",
+   "label": "Resolution",
+   "fieldtype": "Small Text"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-09-05 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Erp Implementation",
+ "name": "RAID Log",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

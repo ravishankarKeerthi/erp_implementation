@@ -1,0 +1,152 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-09-05 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "requirement",
+  "requirement_item",
+  "requirement_description",
+  "column_break_fg1",
+  "fit_type",
+  "gap_type",
+  "section_break_fg2",
+  "analysis_notes",
+  "status",
+  "column_break_fg3",
+  "approved_by",
+  "approved_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "label": "Project",
+   "fieldtype": "Link",
+   "options": "Project",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "requirement",
+   "label": "Requirement",
+   "fieldtype": "Link",
+   "options": "Requirement",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "requirement_item",
+   "label": "Requirement Item (row)",
+   "fieldtype": "Data",
+   "read_only": 1,
+   "description": "Name of the Requirement Item child row this analysis was auto-created from"
+  },
+  {
+   "fieldname": "requirement_description",
+   "label": "Requirement Description",
+   "fieldtype": "Small Text",
+   "read_only": 1,
+   "fetch_from": "requirement_item.requirement_description"
+  },
+  {
+   "fieldname": "column_break_fg1",
+   "label": "",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "fit_type",
+   "label": "Fit Type",
+   "fieldtype": "Select",
+   "options": "Fit (Standard)\nGap (Customization)",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "gap_type",
+   "label": "Gap Type",
+   "fieldtype": "Select",
+   "options": "Configuration\nDevelopment",
+   "depends_on": "eval:doc.fit_type=='Gap (Customization)'"
+  },
+  {
+   "fieldname": "section_break_fg2",
+   "label": "",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "analysis_notes",
+   "label": "Analysis Notes",
+   "fieldtype": "Text Editor"
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "Draft\nIn Review\nApproved\nRejected",
+   "default": "Draft",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_fg3",
+   "label": "",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "approved_by",
+   "label": "Approved By",
+   "fieldtype": "Link",
+   "options": "User",
+   "read_only": 1
+  },
+  {
+   "fieldname": "approved_on",
+   "label": "Approved On",
+   "fieldtype": "Datetime",
+   "read_only": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-05 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Erp Implementation",
+ "name": "Fit Gap Analysis",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

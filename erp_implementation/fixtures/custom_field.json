@@ -1,0 +1,253 @@
+[
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "steering_committee_tab",
+  "label": "Steering Committee",
+  "fieldtype": "Tab Break",
+  "insert_after": "notes",
+  "module": "Erp Implementation"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "steering_committee",
+  "label": "Steering Committee",
+  "fieldtype": "Table",
+  "options": "Steering Committee Member",
+  "insert_after": "steering_committee_tab",
+  "module": "Erp Implementation"
+ },
+
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "requirements_tab",
+  "label": "Requirements",
+  "fieldtype": "Tab Break",
+  "insert_after": "steering_committee",
+  "module": "Erp Implementation"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "requirements_html",
+  "label": "Requirements",
+  "fieldtype": "HTML",
+  "insert_after": "requirements_tab",
+  "module": "Erp Implementation"
+ },
+
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "fitgap_tab",
+  "label": "Fit-Gap",
+  "fieldtype": "Tab Break",
+  "insert_after": "requirements_html",
+  "module": "Erp Implementation"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "fitgap_html",
+  "label": "Fit-Gap",
+  "fieldtype": "HTML",
+  "insert_after": "fitgap_tab",
+  "module": "Erp Implementation"
+ },
+
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "config_dev_tab",
+  "label": "Config/Dev",
+  "fieldtype": "Tab Break",
+  "insert_after": "fitgap_html",
+  "module": "Erp Implementation"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "config_dev_html",
+  "label": "Config/Dev",
+  "fieldtype": "HTML",
+  "insert_after": "config_dev_tab",
+  "module": "Erp Implementation"
+ },
+
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "data_migration_tab",
+  "label": "Data Migration",
+  "fieldtype": "Tab Break",
+  "insert_after": "config_dev_html",
+  "module": "Erp Implementation"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "data_migration_html",
+  "label": "Data Migration",
+  "fieldtype": "HTML",
+  "insert_after": "data_migration_tab",
+  "module": "Erp Implementation"
+ },
+
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "test_uat_tab",
+  "label": "Test/UAT",
+  "fieldtype": "Tab Break",
+  "insert_after": "data_migration_html",
+  "module": "Erp Implementation"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "test_uat_html",
+  "label": "Test/UAT",
+  "fieldtype": "HTML",
+  "insert_after": "test_uat_tab",
+  "module": "Erp Implementation"
+ },
+
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "golive_tab",
+  "label": "Go-Live",
+  "fieldtype": "Tab Break",
+  "insert_after": "test_uat_html",
+  "module": "Erp Implementation"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "golive_html",
+  "label": "Go-Live",
+  "fieldtype": "HTML",
+  "insert_after": "golive_tab",
+  "module": "Erp Implementation"
+ },
+
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "onsite_visits_tab",
+  "label": "Onsite Visits",
+  "fieldtype": "Tab Break",
+  "insert_after": "golive_html",
+  "module": "Erp Implementation"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "onsite_visits_html",
+  "label": "Onsite Visits",
+  "fieldtype": "HTML",
+  "insert_after": "onsite_visits_tab",
+  "module": "Erp Implementation"
+ },
+
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "raid_tab",
+  "label": "RAID",
+  "fieldtype": "Tab Break",
+  "insert_after": "onsite_visits_html",
+  "module": "Erp Implementation"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "raid_html",
+  "label": "RAID",
+  "fieldtype": "HTML",
+  "insert_after": "raid_tab",
+  "module": "Erp Implementation"
+ },
+
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "costing_tab",
+  "label": "Costing",
+  "fieldtype": "Tab Break",
+  "insert_after": "raid_html",
+  "module": "Erp Implementation"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "costing_html",
+  "label": "Costing",
+  "fieldtype": "HTML",
+  "insert_after": "costing_tab",
+  "module": "Erp Implementation"
+ },
+
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "tasks_tab",
+  "label": "Tasks",
+  "fieldtype": "Tab Break",
+  "insert_after": "costing_html",
+  "module": "Erp Implementation"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "tasks_html",
+  "label": "Tasks",
+  "fieldtype": "HTML",
+  "insert_after": "tasks_tab",
+  "module": "Erp Implementation"
+ },
+
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "timesheets_tab",
+  "label": "Timesheets",
+  "fieldtype": "Tab Break",
+  "insert_after": "tasks_html",
+  "module": "Erp Implementation"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Project",
+  "fieldname": "timesheets_html",
+  "label": "Timesheets",
+  "fieldtype": "HTML",
+  "insert_after": "timesheets_tab",
+  "module": "Erp Implementation"
+ },
+
+ {
+  "doctype": "Custom Field",
+  "dt": "Task",
+  "fieldname": "custom_configuration_register",
+  "label": "Configuration Register",
+  "fieldtype": "Link",
+  "options": "Configuration Register",
+  "insert_after": "project",
+  "read_only": 1,
+  "module": "Erp Implementation"
+ },
+ {
+  "doctype": "Custom Field",
+  "dt": "Task",
+  "fieldname": "custom_development_register",
+  "label": "Development Register",
+  "fieldtype": "Link",
+  "options": "Development Register",
+  "insert_after": "custom_configuration_register",
+  "read_only": 1,
+  "module": "Erp Implementation"
+ }
+]

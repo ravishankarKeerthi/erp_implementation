@@ -1,0 +1,128 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-09-05 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "module",
+  "uat_scenario",
+  "business_user",
+  "column_break_uat1",
+  "status",
+  "uat_date",
+  "sign_off_by",
+  "sign_off_date",
+  "section_break_uat2",
+  "comments"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "label": "Project",
+   "fieldtype": "Link",
+   "options": "Project",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "module",
+   "label": "ERPNext Module",
+   "fieldtype": "Select",
+   "options": "Accounts & Finance\nBuying & Purchase\nSelling & CRM\nStock & Warehouse\nManufacturing & BOM\nHR & Payroll\nProjects & Tasks\nQuality Control\nAssets"
+  },
+  {
+   "fieldname": "uat_scenario",
+   "label": "UAT Scenario",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "business_user",
+   "label": "Business User",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_uat1",
+   "label": "",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "Pending\nPassed\nFailed",
+   "default": "Pending",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "uat_date",
+   "label": "UAT Date",
+   "fieldtype": "Date"
+  },
+  {
+   "fieldname": "sign_off_by",
+   "label": "Sign-off By",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "sign_off_date",
+   "label": "Sign-off Date",
+   "fieldtype": "Date"
+  },
+  {
+   "fieldname": "section_break_uat2",
+   "label": "",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "comments",
+   "label": "Comments",
+   "fieldtype": "Small Text"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2026-09-05 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Erp Implementation",
+ "name": "UAT",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

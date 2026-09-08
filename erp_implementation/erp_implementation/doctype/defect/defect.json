@@ -1,0 +1,137 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-09-05 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "test_case",
+  "module",
+  "column_break_df1",
+  "severity",
+  "status",
+  "section_break_df2",
+  "defect_description",
+  "reported_by",
+  "assigned_to",
+  "reported_date",
+  "closed_date"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "label": "Project",
+   "fieldtype": "Link",
+   "options": "Project",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "test_case",
+   "label": "Test Case",
+   "fieldtype": "Link",
+   "options": "Test Case"
+  },
+  {
+   "fieldname": "module",
+   "label": "ERPNext Module",
+   "fieldtype": "Select",
+   "options": "Accounts & Finance\nBuying & Purchase\nSelling & CRM\nStock & Warehouse\nManufacturing & BOM\nHR & Payroll\nProjects & Tasks\nQuality Control\nAssets"
+  },
+  {
+   "fieldname": "column_break_df1",
+   "label": "",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "severity",
+   "label": "Severity",
+   "fieldtype": "Select",
+   "options": "Critical\nHigh\nMedium\nLow",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "Open\nIn Progress\nFixed\nRetest\nClosed",
+   "default": "Open",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "section_break_df2",
+   "label": "",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "defect_description",
+   "label": "Defect Description",
+   "fieldtype": "Text Editor"
+  },
+  {
+   "fieldname": "reported_by",
+   "label": "Reported By",
+   "fieldtype": "Link",
+   "options": "User"
+  },
+  {
+   "fieldname": "assigned_to",
+   "label": "Assigned To",
+   "fieldtype": "Link",
+   "options": "User"
+  },
+  {
+   "fieldname": "reported_date",
+   "label": "Reported Date",
+   "fieldtype": "Date"
+  },
+  {
+   "fieldname": "closed_date",
+   "label": "Closed Date",
+   "fieldtype": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-09-05 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Erp Implementation",
+ "name": "Defect",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

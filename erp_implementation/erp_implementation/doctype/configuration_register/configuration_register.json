@@ -1,0 +1,124 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-09-05 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "fit_gap_analysis",
+  "module",
+  "column_break_cr1",
+  "configuration_area",
+  "status",
+  "section_break_cr2",
+  "description",
+  "configured_by",
+  "completed_on"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "label": "Project",
+   "fieldtype": "Link",
+   "options": "Project",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "fit_gap_analysis",
+   "label": "Fit Gap Analysis",
+   "fieldtype": "Link",
+   "options": "Fit Gap Analysis",
+   "reqd": 1
+  },
+  {
+   "fieldname": "module",
+   "label": "ERPNext Module",
+   "fieldtype": "Select",
+   "options": "Accounts & Finance\nBuying & Purchase\nSelling & CRM\nStock & Warehouse\nManufacturing & BOM\nHR & Payroll\nProjects & Tasks\nQuality Control\nAssets"
+  },
+  {
+   "fieldname": "column_break_cr1",
+   "label": "",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "configuration_area",
+   "label": "Configuration Area",
+   "fieldtype": "Data",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "Pending\nIn Progress\nCompleted",
+   "default": "Pending",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "section_break_cr2",
+   "label": "Details",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "description",
+   "label": "Description / Steps",
+   "fieldtype": "Text Editor"
+  },
+  {
+   "fieldname": "configured_by",
+   "label": "Configured By",
+   "fieldtype": "Link",
+   "options": "User"
+  },
+  {
+   "fieldname": "completed_on",
+   "label": "Completed On",
+   "fieldtype": "Date"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-09-05 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Erp Implementation",
+ "name": "Configuration Register",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

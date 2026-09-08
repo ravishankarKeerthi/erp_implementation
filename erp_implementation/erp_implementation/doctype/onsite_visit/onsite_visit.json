@@ -1,0 +1,135 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-09-05 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "consultant",
+  "visit_date",
+  "site_name",
+  "column_break_ov1",
+  "purpose",
+  "section_break_ov2",
+  "visit_report",
+  "section_break_ov3",
+  "timesheets",
+  "section_break_ov4",
+  "expenses"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "label": "Project",
+   "fieldtype": "Link",
+   "options": "Project",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "consultant",
+   "label": "Consultant",
+   "fieldtype": "Link",
+   "options": "User",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "visit_date",
+   "label": "Visit Date",
+   "fieldtype": "Date",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "site_name",
+   "label": "Site / Location",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "column_break_ov1",
+   "label": "",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "purpose",
+   "label": "Purpose of Visit",
+   "fieldtype": "Data"
+  },
+  {
+   "fieldname": "section_break_ov2",
+   "label": "Visit Report",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "visit_report",
+   "label": "Visit Report",
+   "fieldtype": "Text Editor"
+  },
+  {
+   "fieldname": "section_break_ov3",
+   "label": "Timesheets",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "timesheets",
+   "label": "Timesheets",
+   "fieldtype": "Table",
+   "options": "Onsite Visit Timesheet"
+  },
+  {
+   "fieldname": "section_break_ov4",
+   "label": "Expenses",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "expenses",
+   "label": "Expenses",
+   "fieldtype": "Table",
+   "options": "Onsite Visit Expense"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-09-05 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Erp Implementation",
+ "name": "Onsite Visit",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

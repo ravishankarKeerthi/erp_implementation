@@ -1,0 +1,136 @@
+{
+ "actions": [],
+ "allow_rename": 0,
+ "autoname": "hash",
+ "creation": "2026-09-05 00:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "project",
+  "module",
+  "test_scenario",
+  "column_break_tc1",
+  "status",
+  "tested_by",
+  "test_date",
+  "section_break_tc2",
+  "test_steps",
+  "expected_result",
+  "actual_result",
+  "linked_defect"
+ ],
+ "fields": [
+  {
+   "fieldname": "project",
+   "label": "Project",
+   "fieldtype": "Link",
+   "options": "Project",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "module",
+   "label": "ERPNext Module",
+   "fieldtype": "Select",
+   "options": "Accounts & Finance\nBuying & Purchase\nSelling & CRM\nStock & Warehouse\nManufacturing & BOM\nHR & Payroll\nProjects & Tasks\nQuality Control\nAssets"
+  },
+  {
+   "fieldname": "test_scenario",
+   "label": "Test Scenario",
+   "fieldtype": "Data",
+   "reqd": 1,
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "column_break_tc1",
+   "label": "",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "status",
+   "label": "Status",
+   "fieldtype": "Select",
+   "options": "Not Run\nPass\nFail\nBlocked",
+   "default": "Not Run",
+   "in_list_view": 1
+  },
+  {
+   "fieldname": "tested_by",
+   "label": "Tested By",
+   "fieldtype": "Link",
+   "options": "User"
+  },
+  {
+   "fieldname": "test_date",
+   "label": "Test Date",
+   "fieldtype": "Date"
+  },
+  {
+   "fieldname": "section_break_tc2",
+   "label": "",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "test_steps",
+   "label": "Test Steps",
+   "fieldtype": "Text Editor"
+  },
+  {
+   "fieldname": "expected_result",
+   "label": "Expected Result",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "actual_result",
+   "label": "Actual Result",
+   "fieldtype": "Small Text"
+  },
+  {
+   "fieldname": "linked_defect",
+   "label": "Linked Defect",
+   "fieldtype": "Link",
+   "options": "Defect"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 0,
+ "is_submittable": 0,
+ "links": [],
+ "modified": "2026-09-05 00:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "Erp Implementation",
+ "name": "Test Case",
+ "naming_rule": "Random",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "delete": 0,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Projects Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}
