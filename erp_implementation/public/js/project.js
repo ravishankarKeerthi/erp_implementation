@@ -116,7 +116,13 @@ function status_pill(value) {
 		<span style="width:6px;height:6px;border-radius:50%;background:${color};"></span>${frappe.utils.escape_html(value)}</span>`;
 }
 
-function render_embedded_list(frm, html_fieldname, doctype, opts) {	const wrapper = frm.get_field(html_fieldname).$wrapper;
+function render_embedded_list(frm, html_fieldname, doctype, opts) {
+	const field = frm.get_field(html_fieldname);
+	if (!field) {
+		console.warn(`[project.js] Field "${html_fieldname}" not found on this form — skipping this tab's render.`);
+		return;
+	}
+	const wrapper = field.$wrapper;
 	wrapper.empty();
 
 	if (opts.multi) {
@@ -189,7 +195,12 @@ function money(v) {
 }
 
 function render_costing_tab(frm) {
-	const wrapper = frm.get_field("costing_html").$wrapper;
+	const field = frm.get_field("costing_html");
+	if (!field) {
+		console.warn('[project.js] Field "costing_html" not found on this form — skipping Costing tab render.');
+		return;
+	}
+	const wrapper = field.$wrapper;
 	wrapper.empty();
 
 	const $fields = $(`<div style="display:grid;grid-template-columns:1fr 1fr;gap:0 30px;margin-bottom:18px;"></div>`);
@@ -225,7 +236,12 @@ function render_costing_tab(frm) {
 }
 
 function render_timesheets_tab(frm) {
-	const wrapper = frm.get_field("timesheets_html").$wrapper;
+	const field = frm.get_field("timesheets_html");
+	if (!field) {
+		console.warn('[project.js] Field "timesheets_html" not found on this form — skipping Timesheets tab render.');
+		return;
+	}
+	const wrapper = field.$wrapper;
 	wrapper.empty();
 
 	frappe.call({
